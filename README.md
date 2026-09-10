@@ -1,5 +1,5 @@
 # ahmedgardi319
-Personal profile README for my GitHun portfolio.
+Personal profile README for my GitHub portfolio.
 
 Hi there, I'm Ahmed 👋
 
