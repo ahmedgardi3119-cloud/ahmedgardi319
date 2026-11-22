@@ -3,6 +3,8 @@
 🎓 Final-year B.Sc. IT student (Mumbai University)
 💻 Aspiring full-stack web developer, building real projects with Node.js, React and databases
 
+🌐 **Portfolio:** [ahmed-gardi-portfolio.vercel.app](https://ahmed-gardi-portfolio.vercel.app)
+
 ## 🛠 Tech Stack
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
@@ -33,5 +35,6 @@
 
 ## 📬 Connect with me
 
+- Portfolio: [ahmed-gardi-portfolio.vercel.app](https://ahmed-gardi-portfolio.vercel.app)
 - Email: ahmedgardi.3119@gmail.com
 - GitHub: [@ahmedgardi3119-cloud](https://github.com/ahmedgardi3119-cloud)
