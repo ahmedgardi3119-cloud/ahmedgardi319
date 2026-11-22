@@ -2,7 +2,6 @@
 
 🎓 Final-year B.Sc. IT student (Mumbai University)
 💻 Aspiring full-stack web developer, building real projects with Node.js, React and databases
-📍 Thane, Maharashtra, India
 
 ## 🛠 Tech Stack
 
