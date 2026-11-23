@@ -1,169 +1,207 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ahmed Gardi – Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Ahmed Farooq Gardi, a final-year B.Sc. IT student building full-stack web apps with React, Node.js, MongoDB and PostgreSQL." />
-  <meta name="theme-color" content="#070b1a" />
+  <title>Ahmed Gardi – Full-Stack Developer, Thane</title>
+  <meta name="description" content="Ahmed Farooq Gardi, a final-year B.Sc. IT student building full-stack web apps with React, Node.js, MongoDB and PostgreSQL. Open to developer internships." />
+  <meta name="theme-color" content="#F7B500" />
   <meta property="og:title" content="Ahmed Gardi – Full-Stack Developer" />
-  <meta property="og:description" content="Final-year B.Sc. IT student building full-stack web apps with React, Node.js, MongoDB and PostgreSQL." />
+  <meta property="og:description" content="Final-year B.Sc. IT student building billing, dashboard and awareness apps end to end. Open to internships." />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script>
-    (function () {
-      var d = document.documentElement;
-      d.classList.add("js");
-      try {
-        var t = localStorage.getItem("theme");
-        if (t === "light" || t === "dark") d.setAttribute("data-theme", t);
-      } catch (e) {}
-    })();
-  </script>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <div class="progress" id="progress" aria-hidden="true"></div>
-  <div class="bg-image" aria-hidden="true"></div>
-  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
-  <canvas id="net" aria-hidden="true"></canvas>
-  <div class="glow" id="glow" aria-hidden="true"></div>
+  <a class="skip" href="#work">Skip to projects</a>
 
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="top" id="top-bar">
-    <a class="brand" href="#top" aria-label="Ahmed Gardi, back to top">
-      <span class="mark">AG</span><span class="brand-name">Ahmed Gardi</span>
-    </a>
-    <nav class="nav" id="nav" aria-label="Primary">
-      <a href="#work" data-sec="work">Work</a>
-      <a href="#about" data-sec="about">About</a>
-      <a href="#skills" data-sec="skills">Skills</a>
-      <a href="#contact" data-sec="contact">Contact</a>
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="Ahmed Gardi, back to top"><span>AG</span></a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch to light theme">
-      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"></svg>
-    </button>
-    <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="hire" href="mailto:ahmedgardi.3119@gmail.com?subject=Internship%20opportunity">Email me</a>
   </header>
 
-  <main id="main">
+  <main>
+    <!-- ================= HERO ================= -->
     <section class="hero" id="top" aria-labelledby="name">
-      <div class="hero-copy">
-        <p class="status"><span class="dot" aria-hidden="true"></span>Final-year B.Sc. IT, open to internships</p>
-        <h1 id="name"><span class="word">Ahmed</span> <span class="word w2">Gardi</span></h1>
-        <p class="role">I build <span class="typed" id="typed">full-stack web apps</span><span class="caret" aria-hidden="true"></span></p>
-        <p class="lede">From the database and API to the screen people actually use. I turn real-world processes, like a shop's billing and stock, into software that just works.</p>
+      <div class="sun" aria-hidden="true"></div>
+      <div class="layer far" aria-hidden="true" data-speed="0.10"></div>
+      <div class="layer mid" aria-hidden="true" data-speed="0.20"></div>
+      <div class="track" aria-hidden="true"><img class="train" src="assets/train.svg" alt="" width="1632" height="76" /></div>
+      <div class="layer near" aria-hidden="true" data-speed="0.32"></div>
+      <div class="checker" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Open to developer internships</p>
+        <h1 id="name" aria-label="Ahmed Gardi"><span class="mask"><span class="slide" id="fit">Ahmed Gardi</span></span></h1>
+        <p class="lede">Final-year B.Sc. IT student from Thane. I build billing tools, dashboards and learning sites from the database up to the screen.</p>
         <div class="cta">
-          <a class="btn primary" href="#work">View my work</a>
-          <a class="btn ghost" href="#contact">Contact me</a>
-        </div>
-        <ul class="stats" aria-label="At a glance">
-          <li><b data-stat="projects">0</b><span>full-stack projects</span></li>
-          <li><b data-stat="repos">0</b><span>public repositories</span></li>
-          <li><b data-stat="tech">0</b><span>tools and technologies</span></li>
-        </ul>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <span class="chip-float f1">React</span>
-        <span class="chip-float f2">Node.js</span>
-        <span class="chip-float f3">MongoDB</span>
-        <div class="code-card" id="codeCard">
-          <div class="code-bar"><i></i><i></i><i></i><span>ahmed.js</span></div>
-<pre class="code"><span class="ln"><em class="k">const</em> <em class="v">ahmed</em> = {</span>
-<span class="ln">  <em class="p">role</em>: <em class="s">"Full-Stack Developer"</em>,</span>
-<span class="ln">  <em class="p">stack</em>: [<em class="s">"React"</em>, <em class="s">"Node.js"</em>, <em class="s">"MongoDB"</em>],</span>
-<span class="ln">  <em class="p">studying</em>: <em class="s">"B.Sc. IT, Mumbai University"</em>,</span>
-<span class="ln">  <em class="p">shipping</em>: <em class="s">"real projects, end to end"</em>,</span>
-<span class="ln">  <em class="p">openTo</em>: <em class="s">"internships"</em>,</span>
-<span class="ln">};<b class="cur"></b></span></pre>
+          <a class="btn solid" href="#work">See my work</a>
+          <a class="btn line" href="#contact">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <div class="strip" aria-hidden="true"><div class="track" id="track"></div></div>
+    <!-- ================= WORK ================= -->
+    <section class="work" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="work-h">Selected work</h2>
+          <p id="ghNote">Three projects, each built end to end.</p>
+        </div>
 
-    <section class="section" id="work" aria-labelledby="work-h">
-      <div class="sec-head reveal">
-        <h2 id="work-h">Selected work</h2>
-        <p id="ghNote">Three projects, built end to end. Open one to see how it works.</p>
-        <span class="bar"></span>
+        <article class="proj" id="p-inventory">
+          <div class="proj-text">
+            <h3>Inventory &amp; Billing System</h3>
+            <p class="sum">A full-stack app for small shop owners: keep track of stock, bill customers at the counter and send the invoice to their WhatsApp.</p>
+            <ul class="feats">
+              <li>Log in with email or phone, using a password or a one-time code, with JWT sessions.</li>
+              <li>Dashboard with revenue, orders, low-stock alerts and a payment-mode donut chart.</li>
+              <li>Point-of-sale billing with live search, discounts and automatic stock deduction.</li>
+              <li>Itemised invoice opens straight in the customer's WhatsApp chat.</li>
+            </ul>
+            <ul class="tags"><li>React</li><li>Tailwind CSS</li><li>Recharts</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT</li></ul>
+            <p class="live" id="live-inventory-billing-system"></p>
+            <div class="proj-links"><a class="btn solid sm" href="https://github.com/ahmedgardi3119-cloud/inventory-billing-system" target="_blank" rel="noopener">View code on GitHub</a></div>
+          </div>
+          <div class="proj-art" aria-hidden="true">
+            <div class="receipt">
+              <div class="r-head"><b>SHARMA GENERAL STORE</b><span>Sample invoice</span></div>
+              <div class="r-meta"><span>INV-482913</span><span>23 Nov</span></div>
+              <ul class="r-items">
+                <li><span>Basmati rice 5 kg</span><i></i><span>650.00</span></li>
+                <li><span>Toor dal 2 kg</span><i></i><span>310.00</span></li>
+                <li><span>Sunflower oil 1 L</span><i></i><span>165.00</span></li>
+                <li><span>Tea 500 g</span><i></i><span>240.00</span></li>
+              </ul>
+              <div class="r-sum"><span>Discount</span><span>- 25.00</span></div>
+              <div class="r-total"><span>Net payable</span><span>1,340.00</span></div>
+              <div class="r-sent"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sent on WhatsApp</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj flip" id="p-student">
+          <div class="proj-text">
+            <h3>Student Dashboard</h3>
+            <p class="sum">A student management dashboard with its own REST API and a cloud PostgreSQL database behind it.</p>
+            <ul class="feats">
+              <li>Add, edit, delete and list students from a responsive plain HTML, CSS and JavaScript interface.</li>
+              <li>Express API that validates every request and returns clear errors.</li>
+              <li>Works with Supabase, Railway or Render, with SSL handled automatically.</li>
+              <li>Canvas particle background that reacts to the mouse.</li>
+            </ul>
+            <ul class="tags"><li>JavaScript</li><li>Express</li><li>PostgreSQL</li><li>REST API</li><li>Canvas</li></ul>
+            <p class="live" id="live-student-dashboard"></p>
+            <div class="proj-links"><a class="btn solid sm" href="https://github.com/ahmedgardi3119-cloud/student-dashboard" target="_blank" rel="noopener">View code on GitHub</a></div>
+          </div>
+          <div class="proj-art" aria-hidden="true">
+            <div class="sheet">
+              <div class="s-bar"><b>Students</b><span class="s-add">+ Add student</span></div>
+              <div class="s-row s-th"><span>Name</span><span>Age</span><span>Course</span><span></span></div>
+              <div class="s-row"><span>Aarav Patil</span><span>20</span><span>B.Sc. IT</span><span class="s-act">Edit &nbsp; Delete</span></div>
+              <div class="s-row"><span>Sana Sheikh</span><span>21</span><span>B.Com</span><span class="s-act">Edit &nbsp; Delete</span></div>
+              <div class="s-row"><span>Rohan Nair</span><span>19</span><span>BMS</span><span class="s-act">Edit &nbsp; Delete</span></div>
+              <div class="s-row"><span>Isha Kulkarni</span><span>22</span><span>B.Sc. CS</span><span class="s-act">Edit &nbsp; Delete</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" id="p-traces">
+          <div class="proj-text">
+            <h3>Traces: Social Media Safety</h3>
+            <p class="sum">A college community project: an interactive site that shows people what they leave behind online and how to protect it.</p>
+            <ul class="feats">
+              <li>Pages on trackers and ads, social safety, digital footprint and account security, plus a quiz.</li>
+              <li>Interactive pieces: photo metadata reveal, before and after privacy slider, fake-account checker.</li>
+              <li>React 19 and Tailwind CSS 4, deployed automatically with GitHub Actions.</li>
+              <li>Made with my CEP team at Mumbai University.</li>
+            </ul>
+            <ul class="tags"><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>React Router</li><li>GitHub Actions</li></ul>
+            <p class="live" id="live-social-media-safety"></p>
+            <div class="proj-links">
+              <a class="btn solid sm" href="https://btwebrahim.github.io/social-media-safety/" target="_blank" rel="noopener">Open live site</a>
+              <a class="btn line sm" href="https://github.com/ahmedgardi3119-cloud/social-media-safety" target="_blank" rel="noopener">View code</a>
+            </div>
+          </div>
+          <div class="proj-art" aria-hidden="true">
+            <div class="check">
+              <div class="c-title">Fake account check</div>
+              <ul>
+                <li class="bad"><i>!</i><span>Account created 3 days ago</span></li>
+                <li class="bad"><i>!</i><span>No posts, 4,800 followers</span></li>
+                <li class="bad"><i>!</i><span>Profile photo found elsewhere</span></li>
+                <li class="ok"><i>&#10003;</i><span>Username has no random digits</span></li>
+              </ul>
+              <div class="c-verdict">Likely fake. Do not send money or OTPs.</div>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="filters reveal" role="group" aria-label="Filter projects by technology">
-        <button class="chip on" type="button" data-filter="all" aria-pressed="true">All</button>
-        <button class="chip" type="button" data-filter="React" aria-pressed="false">React</button>
-        <button class="chip" type="button" data-filter="Node.js" aria-pressed="false">Node.js</button>
-        <button class="chip" type="button" data-filter="Database" aria-pressed="false">Database</button>
-      </div>
-      <div class="cards" id="cards"></div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-h">
-      <div class="sec-head reveal">
-        <h2 id="about-h">About me</h2>
-        <p>The short version of who I am and where I'm headed.</p>
-        <span class="bar"></span>
-      </div>
-      <div class="about-grid">
-        <div class="prose reveal">
-          <p>I'm Ahmed Farooq Gardi, a final-year B.Sc. IT student at Mumbai University. I got into development because I like turning a messy real-world process, like a shopkeeper's paper ledger, into something that just works.</p>
-          <p>My projects cover the whole stack: designing the schema, writing the API, building the interface and putting it online. I use AI tools to prototype quickly, then work through the code until I understand how it behaves.</p>
-          <p>Right now I'm finishing my degree and looking for an internship where I can learn from experienced developers and contribute from day one.</p>
-          <dl class="facts">
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about" aria-labelledby="about-h">
+      <div class="wrap about-grid">
+        <div class="about-text">
+          <h2 id="about-h">About</h2>
+          <p>I'm Ahmed Farooq Gardi, a final-year B.Sc. IT student at Mumbai University. I like taking a messy everyday process, like a shopkeeper's paper ledger, and turning it into something that simply works.</p>
+          <p>My projects cover the whole stack: designing the schema, writing the API, building the interface and putting it online. I use AI tools to move faster, then read and test the code until I understand how it behaves.</p>
+          <p>Right now I'm finishing my degree and looking for an internship where I can learn from experienced developers and contribute from the first week.</p>
+        </div>
+        <aside class="ticket" aria-label="Quick facts">
+          <div class="t-top"><span>Developer</span><b>Thane, India</b></div>
+          <dl>
+            <div><dt>Name</dt><dd>Ahmed Farooq Gardi</dd></div>
             <div><dt>Studying</dt><dd>B.Sc. IT, Mumbai University</dd></div>
             <div><dt>Focus</dt><dd>Full-stack web development</dd></div>
             <div><dt>Looking for</dt><dd>Software developer internship</dd></div>
           </dl>
+          <div class="t-stub"><span>Available from now</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills" id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h">Skills</h2>
+        <div class="board" id="board" role="table" aria-label="Skills by area">
+          <div class="b-row b-head" role="row"><span role="columnheader">Area</span><span role="columnheader">What I work with</span></div>
+          <div class="b-row" role="row"><span class="b-line" role="cell" data-flap="Frontend"></span><span class="b-stops" role="cell" data-flap="HTML5 · CSS3 · JavaScript · React · Tailwind CSS · Vite"></span></div>
+          <div class="b-row" role="row"><span class="b-line" role="cell" data-flap="Backend"></span><span class="b-stops" role="cell" data-flap="Node.js · Express · REST APIs · JWT auth · Python · Flask"></span></div>
+          <div class="b-row" role="row"><span class="b-line" role="cell" data-flap="Databases"></span><span class="b-stops" role="cell" data-flap="MongoDB · PostgreSQL · SQL"></span></div>
+          <div class="b-row" role="row"><span class="b-line" role="cell" data-flap="Tools"></span><span class="b-stops" role="cell" data-flap="Git · GitHub · VS Code · Vercel · GitHub Pages"></span></div>
         </div>
-        <ol class="timeline reveal" aria-label="Journey so far">
-          <li><time>Aug 2026</time><h3>Traces, a CEP website</h3><p>Built an interactive guide to social media safety with my college team.</p></li>
-          <li><time>Sep 2026</time><h3>Student Dashboard</h3><p>An Express and PostgreSQL REST API behind a clean CRUD interface.</p></li>
-          <li><time>Sep 2026</time><h3>Inventory and Billing System</h3><p>A MERN app for shop owners with WhatsApp invoices.</p></li>
-          <li><time>Nov 2026</time><h3>Hardened and published</h3><p>Cleaned up my repos, added validation and docs, and launched this portfolio.</p></li>
-          <li class="now"><time>Now</time><h3>Sem 6, final year</h3><p>Finishing my degree and looking for an internship.</p></li>
-        </ol>
       </div>
     </section>
 
-    <section class="section" id="skills" aria-labelledby="skills-h">
-      <div class="sec-head reveal">
-        <h2 id="skills-h">Skills and tools</h2>
-        <p>What I use to build things.</p>
-        <span class="bar"></span>
-      </div>
-      <div class="skillgrid" id="skillgrid"></div>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-h">
-      <div class="sec-head reveal">
-        <h2 id="contact-h">Let's work together</h2>
-        <p>Hiring interns, or have a project that needs another pair of hands? Write to me.</p>
-        <span class="bar"></span>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-side reveal">
-          <a class="contact-card" id="mailLink" href="mailto:ahmedgardi.3119@gmail.com">
-            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg></span>
-            <span><small>Email</small><b>ahmedgardi.3119@gmail.com</b></span>
-          </a>
-          <a class="contact-card" href="https://github.com/ahmedgardi3119-cloud" target="_blank" rel="noopener">
-            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.6 8.7c-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></span>
-            <span><small>GitHub</small><b>ahmedgardi3119-cloud</b></span>
-          </a>
-          <button class="btn ghost" id="copyBtn" type="button">Copy email address</button>
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="layer near flipy" aria-hidden="true"></div>
+      <div class="checker top" aria-hidden="true"></div>
+      <div class="wrap contact-in">
+        <h2 id="contact-h">Let's talk.</h2>
+        <p class="c-lede">If you're hiring interns, or have a project that needs another pair of hands, write to me.</p>
+        <p class="mailrow">
+          <a class="mail" id="mailLink" href="mailto:ahmedgardi.3119@gmail.com">ahmedgardi.3119@gmail.com</a>
+          <button class="btn line sm" id="copyBtn" type="button">Copy address</button>
           <span class="copied" id="copied" role="status" aria-live="polite"></span>
-        </div>
-        <form class="form reveal" id="mailForm" novalidate>
+        </p>
+        <form class="form" id="mailForm" novalidate>
           <label>Your name<input id="fName" name="name" autocomplete="name" required /></label>
-          <label>Message<textarea id="fMsg" name="message" rows="5" required></textarea></label>
+          <label>Message<textarea id="fMsg" name="message" rows="4" required></textarea></label>
           <div class="formrow">
-            <button class="btn primary" type="submit">Open in my email app</button>
+            <button class="btn solid" type="submit">Open in my email app</button>
             <span class="formnote" id="formNote" role="status" aria-live="polite"></span>
           </div>
         </form>
@@ -172,11 +210,9 @@
   </main>
 
   <footer class="foot">
-    <p>Designed and built by Ahmed Farooq Gardi</p>
-    <p><span id="year"></span> · <a href="#top">Back to top</a></p>
+    <p>Ahmed Farooq Gardi</p>
+    <p><a href="https://github.com/ahmedgardi3119-cloud" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; <span id="year"></span></p>
   </footer>
-
-  <dialog class="dlg" id="dlg" aria-labelledby="dlgTitle"><div class="dlg-in" id="dlgIn"></div></dialog>
 
   <script src="script.js"></script>
 </body>
